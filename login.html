@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            background-image: url(img/back.jpg);
+            background-size: cover;
+            background-color: black;
+        }
+        .frame{
+            border: 4px solid rgb(255, 255, 255) ; width: 450px; height: 300px; position: absolute; top:50%; left: 50%;
+            transform:translate(-50%,-50%);
+            border-radius: 10px;
+            text-align:justify;
+            background-color: rgba(4, 15, 49, 0.868);
+            color: white;
+        }
+        .tittle{
+            position: relative;
+            top:-15px;
+            left: 20px;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            width: 370px;
+        }
+        .account{
+            position: relative;
+            top: -15px;
+            left: 23px;
+        }
+        .password{
+            position: relative;
+            top: -10px;
+            left: 23px;
+        }
+        .forget{
+            position: relative;
+            top: 10px;
+        }
+        .loginB{
+            position: relative;
+            top: -10px;
+            left: 23px;
+            font-size: 19px;
+        }
+
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <img style="opacity: 0.69; border-radius: 700px; position: absolute; border: 4px solid black; margin:5px; position:fixed; right:10px ; top: 30px;" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGU5MWhhbHB5M3JtdHhxcmd0enIxMGcwemNnODJrMWI1N3pkOWc5OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VRKheDy4DkBMrQm66p/giphy.gif" width="70"alt="一張圖片" title="Doge">
+    
+    <div class="frame">
+        
+        <h1 class="tittle">Login  to  Howard's  website</h1>
+        <div class="account">
+            <div style="font-size: 20px; margin-bottom: 3px;">Email:</div>
+            <input size="30" maxlength="50" type="text" style="font-size:20px;"></input>
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <br/>
+        <div class="password">
+            <div style="font-size: 20px; margin-bottom: 3px; "> Password:</div>
+            <input  size="30" maxlength="50" type="password" style="font-size:20px;"></input>
+            <ion-icon  name="lock-closed-outline"></ion-icon>
+            <br/>
+            <a class="forget" href="#" style="font-size: 20px; color: white;" >forget password</p>
+            </div>
+            <button class="loginB" onclick="handle_click()" >Log in</button>
+        </div>
+        <script src="script.js"></script>
+        
+        
+    </body>
+    </html>
