@@ -1,0 +1,82 @@
+.back{
+    z-index: 3;
+    background-color: rgb(94, 94, 94);
+}
+  
+.game{
+    background-color: rgb(244, 244, 244);
+    width: 700px;
+    height: 400px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.character{
+    position: relative;
+    left: 100px;
+    top: 173px;
+    width: 48px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/dino.gif);
+    background-size: 50px;
+  
+    z-index: 0;
+}
+.hi{
+    position: absolute; 
+    top:41%; left: 29%; 
+    font-size: 30px;
+    border:solid 2px black ;
+    border-radius: 10px;
+}
+.hi:hover{
+    color: white;
+    font-size: 35px;
+    top:38%; left: 26%; 
+    background-color: rgba(41, 2, 107, 0.683);
+}
+
+.animation{
+    animation: jump 0.65s infinite;
+}
+.block{
+    
+    position: relative;
+    top: 129px;
+    left: 670px;
+    width: 25px;
+    height: 43px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(../img/cactus.png);
+    background-size: 25px;
+    z-index: 1;
+}
+.move{
+    animation: blockmove 2.5s linear infinite;
+}
+
+
+@keyframes blockmove{
+    0%{left: 670px;}
+    20%{left: 536px;}
+    40%{left: 402px;}
+    60%{left: 268px;}
+    80%{left: 134px;}
+    100%{left: -30px;}
+}
+
+@keyframes jump{
+    0%{top: 173px}
+    20%{top: 103px}
+    25%{top: 83px}
+    41.6%{top: 63px;}
+    58.3%{top: 63px;}
+    75%{top: 83px;}
+    80%{top: 103px;}
+    100%{top: 173px;}
+}
