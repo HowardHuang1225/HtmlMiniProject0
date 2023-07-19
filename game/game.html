@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>miniGame</title>
     <link rel="stylesheet" href="game.css"> 
+    <style>
+        .login_page{
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            right: 40px;
+            top: 15px;
+        }
+        .login_page:hover{
+            color:blueviolet;
+            font-size: 27px;
+        }
+    </style>
 </head>
 <body class="back">
-    
+    <a   class="login_page" href="../index.html"><b>Home</b></a>
     <div class="game"> 
        
         <p  id="countup" style="position: relative; top:-5px; left: 620px; font-size: 18px;">0</p>
         
         <p  class="hi" id="clickstart">-- DoubleClick to Start --</p>
         <p   id="hi" style="position: relative; top:-43px; left: 415px; font-size: 18px;">0</p>
-        <h3 style="position: relative; left: 520px; top: -85px;">Score: </h3>
+        <h3 id="score" style="position: relative; left: 520px; top: -85px;">Score: </h3>
         <h3 style="position: relative; left: 330px; top: -125px;">HI: </h3>
         <h3 style="position: absolute; left: 25px; top: -12px;">-- Press any key to jump --</h3>
         <div class="character" id="dino">
             
         </div> 
-        <div style="position: absolute; top: 350px; left: -31px; width: 29px; height: 50px; background-color:  rgb(94, 94, 94); z-index: 5; "></div>
+        <!--<div style="position: absolute; top: 350px; left: -31px; width: 29px; height: 50px; background-color:  rgb(94, 94, 94); z-index: 5; "></div>-->
         <div class="block" id="cactus">
             
         </div>
