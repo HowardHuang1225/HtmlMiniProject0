@@ -1,6 +1,7 @@
 var dino = document.getElementById('dino');
 var cactus = document.getElementById('cactus');
 var clickstart = document.getElementById('clickstart');
+var bird=document.getElementById('bird');
 
 var maxhi=0;
 
@@ -23,6 +24,9 @@ function start(){
         cactus.style.animationDuration='2.5s'
         speed=2.5;
     }
+    if(bird.classList!="move1"){
+        bird.classList.add("move1"); 
+    }
 }
 
 var checkDead = setInterval(function(){
@@ -30,9 +34,11 @@ var checkDead = setInterval(function(){
         parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
 
         var cactusleft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+        var birdleft = parseInt(window.getComputedStyle(bird).getPropertyValue("left"));
 
-        if(cactusleft<148 && cactusleft>77 && dinotop>=131){
+        if((cactusleft<148 && cactusleft>77 && dinotop>=131)  ||(birdleft<145 && birdleft>63 &&(dinotop<75) )){
             cactus.classList.remove("move0");
+            bird.classList.remove("move1");
             //dino.style.backgroundImage="../img/dino.png"
             ok=false;
             alert("Game Over!!!\nyour score is: "+time);
