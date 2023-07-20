@@ -35,8 +35,8 @@ var checkDead = setInterval(function(){
 
         var cactusleft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
         var birdleft = parseInt(window.getComputedStyle(bird).getPropertyValue("left"));
-
-        if((cactusleft<148 && cactusleft>77 && dinotop>=131)  ||(birdleft<145 && birdleft>63 &&(dinotop<75) )){
+        //var birdtop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+        if((cactusleft<148 && cactusleft>77 && dinotop>=131)  ||(birdleft<145 && birdleft>63 &&(dinotop<67) )){
             cactus.classList.remove("move0");
             bird.classList.remove("move1");
             //dino.style.backgroundImage="../img/dino.png"

@@ -75,7 +75,7 @@
 }
 
 .move1{
-    animation: blockmove1 12s linear infinite;
+    animation: blockmove1 5s linear infinite 1.25s;
 }
 
 @keyframes blockmove{
