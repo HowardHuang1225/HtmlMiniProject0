@@ -173,19 +173,27 @@ span{
     position: absolute;
     top: 30%;
     left: 30%;
-    color: rgba(40, 52, 56, 0.313);
+    color: rgba(173, 202, 230, 0.774);
     /**border: 1px solid black;**/
     font-size: 100px;
-    animation: changecol 15s linear infinite;
+    /**animation: changecol 15s linear infinite;**/
+    animation: rot 10s linear infinite;
 }
 
 .changecolor{
     animation: changecol 1s linear infinite;
 }
 @keyframes changecol{
-    0%{color: rgba(40, 52, 56, 0.447); rotate: 10deg;}
-    25%{color: rgba(0, 0, 0, 0.477); rotate: 0deg;}
-    50%{color: rgba(34, 34, 80, 0.479); rotate: -10deg;}
-    75%{color: rgba(62, 28, 62, 0.486); rotate: 0deg;}
-    100%{color:rgba(40, 52, 56, 0.447); rotate: 10deg;}
+    0%{color: rgba(70, 86, 188, 0.696); rotate: 10deg;}
+    25%{color: rgba(71, 173, 192, 0.781); rotate: 0deg;}
+    50%{color: rgba(71, 71, 181, 0.719); rotate: -10deg;}
+    75%{color: rgba(86, 79, 184, 0.667); rotate: 0deg;}
+    100%{color:rgba(72, 172, 208, 0.737); rotate: 10deg;}
+}
+@keyframes rot{
+    0%{rotate: 10deg;}
+    25%{ rotate: 0deg;}
+    50%{ rotate: -10deg;}
+    75%{ rotate: 0deg;}
+    100%{ rotate: 10deg;}
 }
