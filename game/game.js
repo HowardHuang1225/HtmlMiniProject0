@@ -3,10 +3,12 @@ var cactus = document.getElementById('cactus');
 var clickstart = document.getElementById('clickstart');
 var bird=document.getElementById('bird');
 
+var cloud =document.getElementsByTagName('span');
+
 var maxhi=0;
 
-function jump(){
-    if(dino.classList!="animation"){
+function jump(e){
+    if(dino.classList!="animation" && e.keyCode===32){
         dino.classList.add("animation");
     }
 
