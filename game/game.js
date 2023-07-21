@@ -5,12 +5,22 @@ var bird=document.getElementById('bird');
 
 var cloud =document.getElementsByTagName('span');
 
+
+const audio = document.createElement("audio");
+const audio1 = document.createElement("audio");
+const audio2 = document.createElement("audio");
+const audio3 = document.createElement("audio");
+
+
 var maxhi=0;
 
 function jump(e){
     if(dino.classList!="animation" && e.keyCode===32){
         dino.classList.add("animation");
+        audio.src = "../img/jumpeffect.mp3";
+        audio.play();
     }
+
 
     setTimeout(function(){
         dino.classList.remove("animation");
@@ -19,6 +29,8 @@ function jump(e){
 
 
 function start(){
+    audio3.src = "../img/startsound.wav";
+    audio3.play();
     if(cactus.classList!="move0"){
         cactus.classList.add("move0");
         ok=true;
@@ -29,6 +41,10 @@ function start(){
     if(bird.classList!="move1"){
         bird.classList.add("move1"); 
     }
+
+    audio1.src = "../img/bgm.mp3";
+    audio1.volume=0.5;
+    audio1.play();
 }
 
 var checkDead = setInterval(function(){
@@ -43,8 +59,16 @@ var checkDead = setInterval(function(){
             bird.classList.remove("move1");
             //dino.style.backgroundImage="../img/dino.png"
             ok=false;
+
+            audio1.pause();
+            audio1.currentTime = 0;
+
             alert("Game Over!!!\nyour score is: "+time);
             clickstart.style.display ="block"
+            
+
+
+
             if(maxhi<time){
                 maxhi=time;
                 document.getElementById("hi").innerText =maxhi;
@@ -70,6 +94,8 @@ var countup=setInterval(function(){
     if(time!=0 && time%300==0){
         if(speed>=1){
             speed-=0.5;
+            audio2.src = "../img/update.mp3";
+            audio2.play();
         }
         cactus.style.animationDuration=speed+'s';
         console.log("cdcdcdc");

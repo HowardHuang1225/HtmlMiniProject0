@@ -8,9 +8,13 @@
   
 .game{
     background-color: rgb(244, 244, 244);
+    background-image: url("../img/desertback.png");
+    animation: rotate 12s infinite linear;
+    background-size: cover;
     width: 700px;
     height: 400px;
     border: 3px solid black;
+    border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,9 +29,9 @@
     width: 48px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(../img/dino.gif);
+    background-image: url(../img/dino_modify.gif);
     background-size: 50px;
-  
+    opacity: 0.8;
     z-index: 0;
 }
 .hi{
@@ -71,7 +75,7 @@
     background-image: url(../img/bird.gif);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0);
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .move0{
     animation: blockmove 2.5s linear infinite;
@@ -115,6 +119,11 @@
     75%{top: 83px;}
     80%{top: 103px;}
     100%{top: 173px;}
+}
+
+@keyframes rotate{
+    0% {background-position-x: 0px;}
+    100% {background-position-x: -700px;}
 }
 
 
@@ -174,9 +183,9 @@ span{
     animation: changecol 1s linear infinite;
 }
 @keyframes changecol{
-    0%{color: rgba(40, 52, 56, 0.269); rotate: 10deg;}
-    25%{color: rgba(0, 0, 0, 0.365); rotate: 0deg;}
-    50%{color: rgba(34, 34, 80, 0.381); rotate: -10deg;}
-    75%{color: rgba(62, 28, 62, 0.37); rotate: 0deg;}
-    100%{color:rgba(40, 52, 56, 0.24); rotate: 10deg;}
+    0%{color: rgba(40, 52, 56, 0.447); rotate: 10deg;}
+    25%{color: rgba(0, 0, 0, 0.477); rotate: 0deg;}
+    50%{color: rgba(34, 34, 80, 0.479); rotate: -10deg;}
+    75%{color: rgba(62, 28, 62, 0.486); rotate: 0deg;}
+    100%{color:rgba(40, 52, 56, 0.447); rotate: 10deg;}
 }
