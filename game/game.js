@@ -15,7 +15,7 @@ const audio3 = document.createElement("audio");
 var maxhi=0;
 
 function jump(e){
-    if(dino.classList!="animation" && e.keyCode===32){
+    if(dino.classList!="animation"){
         dino.classList.add("animation");
         audio.src = "../img/jumpeffect.mp3";
         audio.play();
