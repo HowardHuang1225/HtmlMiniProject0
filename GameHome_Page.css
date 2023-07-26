@@ -1,0 +1,102 @@
+.body{
+    background-color: rgba(59, 59, 59, 0.881);
+   /** background-image: url(img/gamehomepageback.jpg);**/
+    background-size: cover;
+}
+
+
+.frame{
+    border: 5px solid rgba(255, 255, 255, 0);
+    width: 900px;
+    height: 400px;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+}
+
+.frame1{
+    border: 5px solid rgba(255, 255, 255, 0);
+    width: 900px;
+    height: 400px;
+    position: relative;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+}
+
+
+.frame2{
+    border: 5px solid rgba(255, 255, 255, 0);
+    width: 900px;
+    height: 400px;
+    position: relative;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+}
+
+.gameframe1{
+    float: right;
+    width: 430px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.491);
+    border: 1px solid rgba(255, 255, 255, 0);
+    
+    border-radius: 10px;
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+
+
+.gameframe2{
+    width: 430px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    border-radius: 10px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+.game1content{
+    font-size: 40px;
+    position: absolute;
+    left: 130px;
+    top: 10px;  
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.game1img{
+    background-image: url(img/dinogamescreen.png);
+    background-size: 360px;
+    width: 333px;
+    height: 207px;
+    position: relative;
+    top: 100px;
+    left: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.game1img:hover{
+    background-size: 400px;
+    background-position: 0px -23px;
+}
+
+.gamedescription{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-size: 20px;
+}
