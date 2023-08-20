@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onkeypress="attack()">
+<html lang="en" onkeydown="attack(event) , move(event)">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="frame">
-        <div class="player1">
+        <div id="player1" class="player1">
             <div id="wepon1" class="wepon1"></div>
         </div>
         <div></div>

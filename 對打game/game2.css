@@ -21,17 +21,30 @@
     background-color: red;
     width: 30px;
     height: 20px;
-    position: relative;
-    bottom: 20px;
+    position: absolute;
+    bottom: 40px;
 }
 
-.attack{
-    animation-name: attack;
+.attackr{
+    animation-name: attackr;
     animation-iteration-count: 1;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
 }
-@keyframes attack{
+
+.attackl{
+    animation-name: attackl;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+}
+
+@keyframes attackr{
     0%{width: 30px;}
     50%{width: 80px;}
     100%{width: 30px;}
+}
+
+@keyframes attackl{
+    0%{width: 30px; position: absolute; right: 0px; bottom: 40px;}
+    50%{width: 80px; position: absolute; right: 0px; bottom: 40px;}
+    100%{width: 30px; position: absolute; right: 0px; bottom: 40px;}
 }

@@ -1,0 +1,59 @@
+.tittle{
+    border-bottom: 3px solid black;
+    width: 130px;
+}
+
+.input{
+    width: 180px;
+    height: 44px;
+    position: absolute;
+    font-size: 35px;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border-radius: 15px;
+}
+
+.back{
+    /**background-image: url(../img/japan_back.jpg);**/
+    background-size: cover;
+    background-color: rgba(245, 222, 179, 0.767);
+}
+
+.content{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(38, 38, 38);
+    border-radius: 10px;
+    width: 840px;
+    position: relative;
+    left: 200px;
+    box-shadow: 10px 10px 10px 0px #000000;
+}
+
+
+
+.content1{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid black;
+    width: 800px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.box{
+    justify-content: center;
+    display: flex;
+    width: 160px;
+    font-size: 18px;
+    color: white;
+}
+
+.box:hover{
+    color: rgba(157, 0, 255, 0.9);
+    font-weight:900;
+}
