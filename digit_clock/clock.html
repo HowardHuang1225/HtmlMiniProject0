@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit_Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body id="body" class="body">
+    <h1 class="tittle">Digit Clock</h1> <ion-icon name="alarm-outline" class="clo"></ion-icon>
+    <div id="clockframe" class="clockframe">
+        <h1 id="date" class="date">date</h1>
+        <h1 id="time" class="time">time</h1>
+    </div>
+    <div id="countframe" class="countframe">
+        <h1 class="count" id="count">00 : 00 : 00</h1>
+        <input type="text" class="input" id="input" onclick="clickinput()">
+        <button class="countbtn" id="countbtn" onclick="start()">start</button>
+        <button class="end" id="end" onclick="end()">pause</button>
+        <button class="set" id="set"onclick="setbtn()">set</button>
+    </div>
+    <script src="clock.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

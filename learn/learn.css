@@ -1,0 +1,48 @@
+.back{
+    background-color: wheat;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#countnum,#countbtn,.p,#resetbtn,#pre{
+    font-size: 30px;
+}   
+
+
+#countnum{
+    position: relative;
+    bottom: 30px;
+}
+
+#pre{
+    position: relative;
+    bottom: 30px;
+    /* right: 70px; */
+}
+
+#countbtn,#resetbtn{
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+    margin: 1px;
+    width: 200px;
+    color: white;
+}
+
+#error{
+    display:none;
+}

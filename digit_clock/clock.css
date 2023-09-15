@@ -1,0 +1,166 @@
+body {
+    width: 960px;
+    /* background-image: url("time.gif");
+    background-size: cover;
+    background-position: center; */
+    /* background-color: rgba(0, 0, 0, 0.738); */
+    background-image: linear-gradient(to right, rgb(154, 154, 154) , rgb(33, 33, 33));
+}
+
+.clo{
+    font-size: 40px;
+    position: relative;
+    bottom: 64px;
+    border-bottom: 3px black solid;
+    font-weight: bold;
+    width: 50px;
+    animation: ani 5s linear infinite;
+    -webkit-text-stroke: 1px #000000; font-weight: bold;
+}
+
+.tittle{
+    animation: ani 5s linear infinite;
+    -webkit-text-stroke: 1px #000000; font-weight: bold;
+    border-bottom: 3px black solid;
+    width: 160px;
+    margin-left: 20px;
+    position: relative;
+    left: 27px;
+}
+
+@keyframes ani{
+    0%{color: rgb(106, 53, 53);}
+  50%{color: rgb(63, 63, 128);}
+  100%{color: rgb(59, 111, 59);}
+}
+
+
+
+.clockframe{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 300px;
+    /* background-color: black; */
+    background-image: url(night.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid black;
+    /* box-shadow:3px 3px 3px 3px; */
+    -webkit-text-stroke: 1px #fff; font-weight: bold;
+    
+    filter: drop-shadow(3px 3px rgba(255, 0, 0, 0)) sepia(100%) drop-shadow(-3px -3px rgba(0, 0, 255, 0));
+}
+
+.date{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.time{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.clockframe:hover{
+    width: 510px;
+    height: 310px;
+}
+
+
+.countframe{
+    /* background-color: black; */
+    background-image: url("clock.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    border: 3px solid black;
+    color: white;
+}
+
+.count{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.countbtn{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #000000;
+    -webkit-text-stroke: 0.1px #000000; font-weight: bold;
+    font-size: 27px;
+}
+
+.end{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #000000;
+    -webkit-text-stroke: 0.1px #000000; font-weight: bold;
+    font-size: 27px;
+    display:none;
+}
+
+.set{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #000000;
+    -webkit-text-stroke: 0.1px #000000; font-weight: bold;
+    font-size: 27px;
+    /* border: none; */
+}
+
+.countframe:hover{
+    width: 510px;
+    height: 310px;
+}
+
+.input{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    width: 67px;
+    background-color: rgba(0, 0, 0, 0.362);
+    border-radius: 5px;
+    color: white;
+}
+
+
+.clockframe .countframe{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
