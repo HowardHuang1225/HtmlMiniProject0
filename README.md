@@ -1,4 +1,4 @@
-# Web mini Project
+# mini Web Project
 1. basic login page
 2. solar system
 3. mini dino game
