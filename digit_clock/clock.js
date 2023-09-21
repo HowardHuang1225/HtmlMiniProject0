@@ -78,8 +78,10 @@ var sss;
 function countdown(){
     // console.log(a+b+c);
     if(c==0 && b==0 && a==0){
-        alert("Time's up !!!");
         okk=0;
+        var audio = new Audio("alarm.mp4");
+        audio.play();
+        // alert("Time's up !!!");
         clearInterval(sss);
         document.getElementById("countbtn").style.display = "block";
         document.getElementById("set").style.display = "block";

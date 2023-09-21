@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow">
+
+</head>
+<body>
+    <p class="text" id="text">You have nothing To Do...</p>
+    <div class="frame" id="frame">
+        <div class="inputframe" id="inputframe">
+            <input type="text" class="input" id="input" maxlength="139"placeholder="ToDo List">
+            <button class="addbtn" id="addbtn" onclick="add()"> Enter </button>
+        </div>
+
+        <div class="contentframe" id="contentframe"></div>
+    </div>
+
+    <script src="todo.js"></script>
+    <script src="jquery-2.1.1.min.js"></script>
+</body>
+</html>
